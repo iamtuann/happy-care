@@ -1764,6 +1764,10 @@ section.more-info .count-area-content .count-title {
   display: flex;
 }
 
+.info-wrapper-img .info-item {
+  text-align: center;
+}
+
 .info-wrapper-img .info-item .icon img {
   height: 80px;
   width: auto;
