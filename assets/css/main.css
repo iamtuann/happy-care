@@ -750,6 +750,11 @@ section.main-banner {
   z-index: 2;
 }
 
+.mySlide {
+  position: relative;
+  z-index: 3;
+}
+
 
 /*
 ---------------------------------------------
