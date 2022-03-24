@@ -1672,10 +1672,11 @@ section.featured-product .info-item .icon img {
 }
 
 section.featured-product .info-item h4 {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 800;
+  text-align: center;
 }
 
 section.featured-product .product-image {
@@ -1756,6 +1757,11 @@ section.more-info .count-area-content .count-title {
 
 .info-wrapper-img {
   display: flex;
+}
+
+.info-wrapper-img .info-item .icon img {
+  height: 80px;
+  width: auto;
 }
 
 
