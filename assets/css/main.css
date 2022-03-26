@@ -171,7 +171,7 @@ body {
 
 .white-button a {
   font-size: 13px;
-  color: #dc8cdb;
+  color: #62be62;
   background-color: #fff;
   padding: 12px 30px;
   display: inline-block;
@@ -188,7 +188,7 @@ body {
 .text-button a {
   font-size: 14px;
   font-weight: 500;
-  color: #dc8cdb;
+  color: #62be62;
   text-decoration: underline !important;
   transition: all .3s;
 }
@@ -232,7 +232,7 @@ section {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #62be62;
 }
 
 .section-heading p {
@@ -247,7 +247,7 @@ header
 */
 .background-header {
   background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+  background: linear-gradient(-145deg, rgb(105, 170, 84) 0%, rgb(200 219 186) 100%) !important;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -257,7 +257,8 @@ header
 }
 
 .header-area {
-  background-image: url(../images/header-bg.png);
+  background: rgb(219,138,222) !important;
+  background: linear-gradient(-145deg, rgb(105, 170, 84) 0%, rgb(200 219 186) 100%) !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -290,6 +291,11 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.header-area .main-nav .logo .main-nav-logo2 {
+  height: 75px;
+  margin-left: 20px;
 }
 
 .header-area .main-nav .logo img{
@@ -545,7 +551,7 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 80px;
+  min-height: 85px;
 }
 
 .header-area .nav {
@@ -555,6 +561,8 @@ header
 .header-area.header-sticky .nav li a.active {
   color: #dc8cdb;
 }
+
+
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -684,7 +692,7 @@ section.main-banner {
 }
 
 .main-banner {
-  padding-top: 150px;
+  padding-top: 130px;
 }
 
 .main-banner .right-image {
@@ -768,18 +776,20 @@ services
   padding: 30px 20px;
   margin: 15px;
   transition: all .3s;
+  
 }
 
 .services .item:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .services .item .icon {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 80px;
+  min-height: 244px;
   line-height: 80px;
   vertical-align: middle;
+  
 }
 
 .services .item h4 {
@@ -792,6 +802,7 @@ services
 
 .services .item p {
   line-height: 22px;
+  min-height: 88px;
 }
 
 .services .owl-dots {
@@ -809,6 +820,17 @@ services
 
 .services .owl-dots .active {
   background-color: #dc8cdb;
+}
+
+.product-wrapper {
+  position: fixed;
+  
+}
+
+.product-rating-star {
+  padding: 0 2px;
+  color: goldenrod;
+  font-size: 14px;
 }
 
 
@@ -865,11 +887,13 @@ section.our-courses .naccs .menu div {
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
   border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(105, 170, 84, 0.5);
 }
 
 section.our-courses .naccs .menu div.active {
-  color: #dc8cdb;
+  color: #62be62;
   border: 3px solid rgba(219,138,222,1);
+  border: 3px solid rgba(105, 170, 84, 1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -1258,8 +1282,8 @@ section.contact-us ul.social-icons li a {
   display: inline-block;
   text-align: center;
   line-height: 44px;
-  background-color: #3B566E;
-  color: #dc8cdb;
+  background-color: #46a746;
+  color: #fff;
   border-radius: 50%;
   transition: all .5s;
 }
@@ -1809,7 +1833,7 @@ body {
   }
   .header-area {
     background: rgb(219,138,222) !important;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+    background: linear-gradient(-145deg, rgb(105, 170, 84) 0%, rgb(200 219 186) 100%) !important;
   }
   .services .owl-nav .owl-next{
     right: -70px;
@@ -1858,6 +1882,14 @@ body {
 @media (max-width: 992px) {
   .main-banner .right-image img {
     width: 500px;
+  }
+
+  section {
+    margin-top: 60px;
+  }
+
+  .header-area .main-nav .logo .main-nav-logo2 {
+    height: 40px;
   }
   
   .main-banner .header-text::after {
@@ -1938,6 +1970,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header-area .main-nav .logo .main-nav-logo2 {
+    height: 60px;
+    width: auto;
+    margin-left: -30px;
+  }
   .main-banner .right-image img {
     width: 400px;
   }
